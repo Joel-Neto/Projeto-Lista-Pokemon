@@ -1,0 +1,145 @@
+body{
+  max-width: 1280px;
+  margin: 0 auto;
+  /* background-color: #5e5b5bad; */
+  background-image: linear-gradient(#1f6aff, #fefe79);
+  color: #333333;
+}
+
+body.modoEscuro{
+  /* background-color: #212121; */
+  background-image: linear-gradient(#212121, #767676);
+  color: #f5f5f5;
+}
+
+header{
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo,
+header .imagemBtn{
+  width: 30px;
+  transition: 0.2s ease-in-out;
+}
+
+header #btnAlterarTema{
+  background-color: transparent;
+  border: none;
+}
+
+header .logo:hover, 
+header .imagemBtn:hover{
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+main{
+  padding: 20px;
+}
+
+main .listagemPokemon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+main ul .cartaoPokemon{
+  /* background-color: #d8e3ec; */
+  background-image: url(https://i.pinimg.com/originals/93/98/94/9398944b931f51d4ab0a8e92f44ca452.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  width: 220px;
+  height: 380px;
+  padding: 15px;
+  border: 1px solid black;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  transition: .2s ease-in-out;
+}
+
+main ul .cartaoPokemon:hover{
+  background-color: #96d9d6;
+  transform: skewY(2deg);
+  cursor: pointer;
+}
+
+.modoEscuro .cartaoPokemon{
+  /* background-color: #a8a8a8; */
+  background-image: url(https://img.freepik.com/vetores-premium/ceu-e-mar-fundo-noite-estrelada_105940-108.jpg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: top;
+  border: 1px solid white;
+}
+
+main .cartaoPokemon .informacoes{
+  border: 1px solid #333333;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.modoEscuro .cartaoPokemon .informacoes{
+  border:1px solid #f5f5f5;
+}
+
+main .cartaoPokemon .informacoes span{
+  text-transform: uppercase;
+  font-size: 17px;
+  padding: 5px;
+}
+
+main .listagemPokemon .cartaoPokemon .imgGif{
+  width: 90px;
+  height: 90px;
+}
+
+main .listagemPokemon .cartaoPokemon .tipos{
+  display: flex;
+  gap: 15px;
+}
+
+main .listagemPokemon .cartaoPokemon .tipo{
+  padding:8px;
+  border: 1px solid #333333;
+  border-radius: 10px;
+
+}
+
+main .listagemPokemon .grama{
+  background-color: #7ac74c;
+}
+
+main .listagemPokemon .veneno{
+  background-color: #df67ddfd;
+}
+
+main .listagemPokemon .fogo{
+  background-color: #ee8130;
+}
+
+main .listagemPokemon .agua{
+  background-color: #6390f0;
+}
+
+main .listagemPokemon .inseto{
+  background-color: #a6b91a;
+}
+
+main .listagemPokemon .cartaoPokemon .descricao{
+  font-size: 16px;
+  padding-right: 5px;
+  text-align:left;
+  max-height: 100px;
+  overflow-y: scroll;
+}
+
